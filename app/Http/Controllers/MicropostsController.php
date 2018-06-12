@@ -45,6 +45,8 @@ class MicropostsController extends Controller
         return redirect('/');
     }
     
+    
+    
     public function destroy($id)
     {
         $micropost = \App\Micropost::find($id);

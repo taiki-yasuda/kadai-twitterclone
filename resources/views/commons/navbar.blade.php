@@ -23,8 +23,13 @@
                             </ul>
                         </li>
                     @else
-                        <li>{!! link_to_route('signup.get', 'Signup') !!}</li>
-                        <li>{!! link_to_route('login', 'Login') !!}</li>
+                    <li><button type="button" class="btn btn-link">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <br>{!! link_to_route('signup.get', 'Signup') !!}</li></button>
+                    
+                    <li><button type="button" class="btn btn-link">
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <br>{!! link_to_route('login', 'Login') !!}</li></button>
                     @endif
                 </ul>
             </div>
