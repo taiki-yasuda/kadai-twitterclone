@@ -8,6 +8,7 @@ use App\User;
 use App\Micropost;
 
 class UsersController extends Controller
+
 {
     public function index()
     {
