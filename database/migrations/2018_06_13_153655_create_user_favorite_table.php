@@ -24,7 +24,7 @@ class CreateUserFavoriteTable extends Migration
             $table->foreign('favorite_id')->references('id')->on('microposts')->onDelete('cascade');
 
             // Do not allow duplication of combination of user_id and favorite_id
-            $table->unique(['user_id', 'favorite_id']);
+            //$table->unique(['user_id', 'favorite_id']);
         });
     }
 
